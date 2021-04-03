@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .red{
+            width: 100px;
+            height: 100px;
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1 class="heading">
+            <span>ok</span>
+            <style>
+                h1{
+                    color: red;
+                }
+            </style>
+            <span>love</span>
+        </h1>
+        <h1 class="heading">pk</h1>
+        <h1 class="heading" onclick="console.log(this)">
+        <span onclick="console.log(this)">Event</span></h1>
+        <h1 id="head">ok</h1>
+        <a href="gg.com" name="ok">Click</a>
+    </div>
+    <form action="" id="form-1"></form>
+    <form action="" id="form-2"></form>
+    <!-- Them element -->
+    <div class="box2" onclick="console.log('box2')">
+        <h1>Eventbox</h1>
+        <button>Click</button>
+    </div>
+
+    <div class="form">
+        <input type="text" name="" id="">
+        <input type="checkbox" name="" id="">
+        <select name="" id="">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+
+        </select>
+    </div>
+    <script>
+        document.onkeyup=(e)=>{
+            console.log(e.which);  //hiển thị mã phím
+            switch(e.which)
+            {
+                case 27: 
+                console.log("exit");
+                break;
+            }
+        }   
+        // ID
+        var Id=document.getElementById("head");
+        console.log(Id);
+        //Class
+        var clas=document.getElementsByClassName("heading");
+        console.log(clas);
+        //Tag
+        var Tag=document.getElementsByTagName("h1");
+        console.log(Tag);
+        //selector css
+        var Css=document.querySelector(".box h1.heading:nth-child(1)");
+        console.log(Css);
+        //Html collection
+        console.log(document.anchors);  // select những thẻ a có name
+
+        //Cach 2
+        var boxNode=document.querySelector(".box");
+        console.log(boxNode);
+        var boxNodeitem=boxNode.querySelectorAll("h1");
+        console.log(boxNodeitem);
+
+        // Html collection
+        console.log(document.forms);  
+        console.log(document.forms["form-1"]);  
+        console.log(document.forms[0]);  
+
+    </script>
+    <!-- <script src="Attribute_Dom.js"></script> -->
+    <!-- <script src="TextNode.js"></script> -->
+    <!-- <script src="Node.js"></script> -->
+    <script src="ClassList+event.js"></script>
+    <script src="event2.js"></script>
+
+    <!-- <script>
+        var test=(element)=>{
+            console.log("element");
+        }
+        var number=[1,2,3,4,5,7];
+        var result=number.find((item, index)=>{
+            return item==2;
+        })
+        console.log(result);
+    </script> -->
+</body>
+</html>
