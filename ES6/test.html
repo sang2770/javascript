@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="id"></div>
+    <script>
+        // function foo ()
+        // {
+        // console.log("foo");
+        // }
+        
+        // function bar ( )
+        // {
+        // console.log("bar");
+        // foo();
+        // }
+        
+        // function baz ()
+        // {
+        // console.log("baz");
+        // }
+        
+        // ////Execute function to test Messages queue & call stack
+        // bar( );
+        // baz();
+
+        // var cat=()=>{
+        //     setTimeout(
+        //         ()=>{
+        //             console.log("cat");
+        //         },2000
+        //     )
+            
+        // }
+        
+        // async function show()
+        // {
+        //     var mypromise=new Promise((resolve, reject)=>{
+        //     setTimeout(
+        //         ()=>{
+        //             resolve("cat");
+        //         },2000
+        //     )
+        // })
+        //     document.getElementById("id").innerHTML= await mypromise
+
+        // }
+        // show(cat);
+
+        // function cat()
+        // {
+        //     return Promise((resol)=>{
+        //         console.log("cat");
+        //         resol();
+        //     })
+        // }
+        // function dog(){
+        //     return new Promise((resol)=>{
+        //         setTimeout(() => {
+        //         console.log("dog");
+        //         resol();
+        //         }, 2000);
+                
+        //     })
+            
+            
+        // }
+        // async function showall()
+        // {
+        //     await dog();
+        //     await cat();
+        //     show_1(()=>{console.log("ok");});
+        // }
+        // showall()
+        // /// xử lí bằng callback
+        //  function show_1(callback)
+        //  {
+        //      setTimeout(() => {
+        //          console.log("sang dep zai");
+        //          callback()
+        //      }, 3000);
+        //  }
+         // xử lí bằng promise
+
+         var myPromise_1=new Promise((resol)=>{
+             resol("test");
+         })
+         myPromise_1
+            .then((item)=>{
+                return new Promise((resol)=>{
+                    setTimeout(() => {
+                    console.log(item+"xu li Promise:dog");
+                    resol("cat");
+                    }, 2000);
+                })
+            })
+            .then((item)=>{
+                console.log(item);
+            })
+            
+    </script>
+</body>
+</html>

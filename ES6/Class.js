@@ -17,5 +17,5 @@ class course1{
     }
 }
 var html=new course1("sang", "dzai");
-console.log(html.getname());
-export default html;
+console.log(html.getname);
+// export default html;

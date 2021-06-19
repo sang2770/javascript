@@ -1,8 +1,30 @@
 // var / let & const   Scrope, hosting
 // const/ var & let 
+//funtion-scrope  // pham vi trong mot ham
+function myFn() {
+    var foo = 'peekaboo!'; // ca let va const
+    
+    console.log(foo); // 'peekaboo!'
+  }
 
+ console.log(foo); // ReferenceError: foo is not defined
+//block-scrope   //pham vi trong mot khoi code {}
 
-// Scrope  var bien toan cuc dungf cat trong va ngoai block
+if (true) {
+    var foo = 'peekaboo!';
+    let bar = 'i see u';
+    const baz = 'baby blue!';
+  
+    console.log(foo); // 'peekaboo!';
+    console.log(bar); // 'i see u';
+    console.log(baz); // 'baby blue!';
+  }
+  
+console.log(foo); // 'peekaboo!';
+console.log(bar); // ReferenceError: bar is not defined
+console.log(baz); // ReferenceError: baz is not defined
+
+// Scrope  var bien toan cuc dung ca trong va ngoai block
     // var+ let :truy cap dc ben trong block
 
 {
@@ -28,3 +50,4 @@ const d=10;
 
 // code thuan  :var 
 //babel : let const
+

@@ -48,3 +48,22 @@ User.prototype.getClass = function(){
 
 console.log(author.Lop);
 console.log(author.getClass());
+
+var list=[
+    {
+        name:"Nguyen van sang",
+        class:"CNTT1-K60",
+        address:"Ha Noi"
+    }, {
+        name:"Nguyen van sang",
+        class:"CNTT1-K60",
+        address:"Ha Noi"
+    }, {
+        name:"Nguyen van sang",
+        class:"CNTT1-K60",
+        address:"Ha Noi"
+    }
+]
+console.log(typeof list);
+var [res]=list;
+console.log(res);

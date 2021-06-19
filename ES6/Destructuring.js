@@ -1,8 +1,8 @@
 var array=["js", "html", "ok"];
 var [a, b, c]=array;
-var [d, ...res]=array
+// var [d, ...res,c]=array
 console.log(a+b+c);
-console.log(a,res);
+// console.log(a,res);
 
 var course={
     name:"Js", 
@@ -23,3 +23,15 @@ function show({name, price, ...res})
 }
 
 show(course);
+const test=[...array, 2];
+console.log(test);
+const Course={
+    img:"1",
+    cat:"cat",
+    dog:"dog"
+}
+const Co={
+    ...Course,
+    cat:"of"
+}
+console.log(Co);

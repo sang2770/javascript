@@ -69,3 +69,17 @@ function ok()
 }
 ok();
 
+// logic 
+/*{
+    NaN, null, false, "",undefined, 0
+}*/
+var result= "a" && "b" && "c" && NaN;  // lấy gtri cuối cùng nếu k nằm trong 6 tk trên nếu gặp một trong 6 tk sẽ lấy luôn
+
+if(!result)
+{
+    console.log("Lọt vào r");
+}
+var result1="a" || "b";   // lấy tk đầu tiên khác 6 tk bên trên ngược lại với &&
+console.log(result1);
+var result2=null||undefined;   // lấy tk đầu tiên khác 6 tk bên trên ngược lại với &&
+console.log(result2);

@@ -30,6 +30,7 @@ var evenlist=document.querySelectorAll(".box h1");
 for(let i=0;i<evenlist.length;i++)
 {
     evenlist[i].onclick=(e)=>{
+        console.log(e.target);
         console.log(evenlist[i].innerText);
         console.log(e.target.innerText);
         console.log(e);
