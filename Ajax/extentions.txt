@@ -1,0 +1,13 @@
+auto close tag
+auto rename 
+beautify
+better comment
+braket pair
+es7
+html css
+html snippets
+js
+live server
+path intellisent
+prettier
+vscode-icon

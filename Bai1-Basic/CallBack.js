@@ -32,6 +32,7 @@ Array.prototype.Find1=function(callback)
 {
     for (var i in this) {
        console.log(this.hasOwnProperty(i));
+       console.log(i);
         if(callback(this[i],i)==true && this.hasOwnProperty(i))
             return this[i];
     }
@@ -41,6 +42,7 @@ function find(item){
 }
 var resultFind=TestArray.Find1(find);
 console.log(resultFind);
+console.log(TestArray);
 
 // filter
 Array.prototype.Filter=function(callBack)

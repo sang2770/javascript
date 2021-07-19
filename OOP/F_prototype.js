@@ -21,6 +21,7 @@ console.log(Rabbit.prototype);
 
 console.log(Rabbit.prototype);
 let rabbit=new Rabbit("White");   // rabbit.__proto__==animals;
+console.log(rabbit);
 Rabbit.prototype=animals;
 // rabbit.__proto__=animals;
 console.log(rabbit);

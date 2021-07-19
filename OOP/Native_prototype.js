@@ -52,3 +52,5 @@ let obj={
 }
 obj.join=Array.prototype.join;
 console.log(obj.join(","));
+console.log(Array.prototype);
+console.log(Object.prototype);
