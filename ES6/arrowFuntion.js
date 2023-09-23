@@ -27,7 +27,7 @@ let add= function(a, b, c){
     add()
     // call
     console.log(add.call(Res, 1, 2, 3));
-    // apply
+    // apply: Đối số truyền vào là 1 mảng
     console.log(add.apply(Res, [1,2,3]));
     //bind 
     let result=add.bind(Res);

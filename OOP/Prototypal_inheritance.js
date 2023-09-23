@@ -14,9 +14,11 @@ var rabbit={
     jumps:true
 }
 rabbit.__proto__=animal; // ke thua 
-console.log(rabbit);
-console.log(rabbit.arm);  // tham chieu vao animal lay arm
-console.log(Object.is(rabbit.color, animal.color));
+console.log('=====Object inherit=====');
+
+console.log('abbit', rabbit);
+console.log('abbit.arm', rabbit.arm);  // tham chieu vao animal lay arm
+console.log('Object.is(rabbit.color, animal.color)', Object.is(rabbit.color, animal.color));
 
 var Mouse = {
     Big:4,
@@ -46,7 +48,6 @@ let admin = {
     __proto__: user,
     isAdmin: true
   };
-  
 console.log(admin.fullName); // John Smith (*)
   // setter triggers!
   admin.fullName = "Alice Cooper"; // (**)

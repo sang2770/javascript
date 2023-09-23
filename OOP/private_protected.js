@@ -39,15 +39,22 @@ class Coffee_pri{
 }
 
 var coffee_pri=new Coffee_pri(100);
+console.log(coffee_pri._waterAmount);
 coffee_pri.waterAmount=-10;  // da bi kiem soat
 console.log(coffee_pri.waterAmount);
 
 // su dung #  duoc ho tro
 class Coffee_pri_1{
+    // private
     #waterAmount=0;
+    // public
+    coffee = 'coffee';
     constructor(power){
         this.power=power;
         console.log(`Created a coffee-machine, power : ${power}`);
+        // Protected attribute: name
+        this.name = 'xxx';
+        console.log(this.name);
     }
     #fixWaterAmount(value) {
         if (value < 0) return 0;

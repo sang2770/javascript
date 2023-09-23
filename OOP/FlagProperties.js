@@ -4,10 +4,13 @@ let cat={
     child:[1,2,4]
 }
 //Defaault flags :true
-console.log(cat);
+console.log('cat', cat);
+
+console.log('=====Kiểm tra flags thuộc tính =====');
+
 let descriptions=Object.getOwnPropertyDescriptor(cat, "name");// show name and flags
-console.log(descriptions);
-console.log(JSON.stringify(descriptions))
+console.log('descriptions', descriptions);
+// console.log(JSON.stringify(descriptions))
 // change flags
 // non-writable  - khong the ghi de
     Object.defineProperty(cat, "name",{

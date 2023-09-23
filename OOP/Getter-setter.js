@@ -4,12 +4,14 @@ const myCar={
     make:"Toyata",
     getColor:function(){
         return this.color;
+    },
+    setColor:function(newColor){
+        this.color=newColor;
     }
 }
-console.log(myCar.color);
+console.log('color',myCar.color);
 const a= myCar.getColor();
-const b=a;
-console.log(b);
+console.log('color', a);
 //setter
     myCar.color="red"
     console.log(myCar);
@@ -44,3 +46,5 @@ Object.defineProperty(myCat, "color", {
 console.log(Object.getOwnPropertyDescriptor(myCat, "color"));
 console.log(myCat.color);
 
+myCat.color = 'yellow';
+console.log('color:', myCat.color );

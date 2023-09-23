@@ -1,3 +1,4 @@
+console.log(Object.getPrototypeOf(Array));
 // nguyen mau goc
 let dog={
     name:"lucky"
